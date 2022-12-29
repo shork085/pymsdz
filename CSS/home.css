@@ -12,42 +12,42 @@ html,body {
 }
 #main {
     position: relative;
-    width: 40rem;
-    height: 64.375rem;
+    width: 10rem;
+    height: 16.0938rem;
     margin: 0px auto;
     /* background-color: aqua; */
     /* background: url("/CSS/img/bg.jpg") no-repeat; */
     background: url("../CSS/img/bg.png") no-repeat;
-    background-position: 0px -3rem;
+    background-position: 0px -.75rem;
     background-size: 108%;
     overflow: hidden;
 }
 img {
     position: absolute;
-    width: .7994rem;
-    bottom: 15.625rem;
-    left: 1.25rem;
+    width: .1998rem;
+    bottom: 3.9063rem;
+    left: .3125rem;
 }
 
 #wool {
     position: absolute;
-    width: 24rem;
-    height: 18.025rem;
+    width: 6rem;
+    height: 35.7563rem;
     /* background-color: aquamarine; */
     background: url("../CSS/img/wool.png") no-repeat;
     background-size: 100%;
-    top: 3.125rem;
+    top: .7813rem;
     left: 0;
     animation: wool 1s  linear infinite;
 }
 #light {
     position: absolute;
-    width: 10rem;
-    height: 8.3688rem;
+    width: 2.5rem;
+    height: 2.0922rem;
     /* background-color: aquamarine; */
     background: url("../CSS/img/light.png") no-repeat;
     background-size: 100%;
-    right: .3125rem;
+    right: .0781rem;
     animation: blink 1s linear infinite;
 }
 
@@ -70,13 +70,13 @@ img {
 
 #head {
     position: absolute;
-    width: 24rem;
-    height: 7.0806rem;
+    width: 6rem;
+    height: 1.7703rem;
     /* background-color: cadetblue; */
     background: url("../CSS/img/head.png") no-repeat;
     background-size: 100%;
-    top: 8.25rem;
-    right: 3.4375rem;
+    top: 2.0625rem;
+    right: .8594rem;
     z-index: 1;
 }
 /* #head p {
@@ -88,23 +88,23 @@ img {
 } */
 #subtitle {
     position: absolute;
-    width: 11.5994rem;
-    height: 7.0806rem;
+    width: 2.9rem;
+    height: 1.7703rem;
     /* background-color: burlywood; */
     background: url("../CSS/img/subtitle.png") no-repeat;
     background-size: 100%;
-    top: 15.9375rem;
-    left: 4.375rem;
+    top: 3.9844rem;
+    left: 1.0938rem;
     z-index: 1;
 }
 #yg {
     position: absolute;
-    width: 38rem;
-    height: 52.1431rem;
+    width: 9.5rem;
+    height: 13.0359rem;
     /* background-color: bisque; */
     background: url("../CSS/img/yg.png") no-repeat;
     background-size: 100%;
-    background-position: 0px -185px;
+    background-position: 0px -2.8906rem;
     bottom: 0;
     right: 0;
 }
@@ -122,35 +122,35 @@ img {
     -webkit-tap-highlight-color: transparent;
 }
 #c1 {
-    width: 21.28rem;
-    height: 35.9787rem;
+    width: 5.32rem;
+    height: 8.9953rem;
     /* background-color: brown; */
     background: url("../CSS/img/1.png");
-    top: 7.75rem;
-    right: -20.125rem;
+    top: 1.9375rem;
+    right: -5.0313rem;
     /* left: 10%; */
     animation: c1 1s ease;
     animation-fill-mode: forwards;
 }
 #c2 {
-    width: 17.8594rem;
-    height: 31.8075rem;
+    width: 4.4656rem;
+    height: 7.9519rem;
     /* background-color: blueviolet; */
     background: url("../CSS/img/2.png");
-    top: 10.25rem;
-    right: -17.1875rem;
+    top: 2.5625rem;
+    right: -4.2969rem;
     animation: c2 1s ease;
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
 #c3 {
-    width: 19.3794rem;
-    height: 31.2856rem;
+    width: 4.8448rem;
+    height: 7.8213rem;
     /* background-color: blue; */
     background: url("../CSS/img/3.png");
-    background-position-x: -9.25rem;
-    top: 7.625rem;
-    right: -19.625rem;
+    background-position-x: -2.3125rem;
+    top: 1.9063rem;
+    right: -4.9063rem;
     animation: c3 1s ease;
     animation-fill-mode: forwards;
     animation-delay: 2s;
@@ -158,40 +158,40 @@ img {
 
 /* 衣服动画效果 */
 @keyframes c1 {
-    0%{right: -20.125rem;}
-    100%{right: 12.75rem;}
+    0%{right: -5.0313rem;}
+    100%{right: 3.1875rem;}
 }
 @keyframes c2 {
-    0%{right: -17.1875rem;}
-    100%{right: 2.9375rem;}
+    0%{right: -4.2969rem;}
+    100%{right: .7344rem;}
 }
 @keyframes c3 {
-    0%{right: -19.625rem;}
-    100%{right: -9.3125rem;}
+    0%{right: -4.9063rem;}
+    100%{right: -2.3281rem;}
 }
 
 #sheep {
     position: absolute;
-    width: 12.4rem;
-    height: 9.6563rem;
+    width: 3.1rem;
+    height: 2.4141rem;
     /* background-color: bisque; */
     background: url("../CSS/img/click.png") no-repeat;
     background-size: 100%;
     bottom: 0px;
-    left: 1.25rem;
+    left: .3125rem;
 }
 
 #btn {
     position: absolute;
-    width: 8.7994rem;
-    height: 9.0125rem;
+    width: 2.2rem;
+    height: 2.2531rem;
     border-radius: 50%;
     /* border: 5px solid black; */
     /* background-color: #CCBB94; */
     background: url("../CSS/img/start.png") no-repeat;
     background-size: 100%;
-    bottom: 1.9375rem;
-    right: 3.125rem;
+    bottom: .4844rem;
+    right: .7813rem;
     transform-origin: 50% 49%;
     animation: btn 5s linear infinite;
     animation-direction: alternate;
@@ -199,31 +199,31 @@ img {
 
 #begin {
     position: absolute;
-    width: 6.4rem;
-    height: 5.7938rem;
+    width: 1.6rem;
+    height: 1.4484rem;
     border-radius: 50%;
     /* background-color: aquamarine; */
     background: url("../CSS/img/begin.png") no-repeat;
     background-size: 91%;
     background-position: center;
-    bottom: 3.75rem;
-    right: 4.4375rem;
+    bottom: .9375rem;
+    right: 1.1094rem;
 }
 #begin a {
     -webkit-tap-highlight-color: transparent;
     position: absolute;
     display: inline-block;
-    width: 3.5194rem;
-    height: 2.6069rem;
+    width: .8797rem;
+    height: .6516rem;
     text-decoration: none;
     text-align: center;
-    font-size: 1.5625rem;
+    font-size: .3906rem;
     color: black;
     /* line-height: 90px; */
     font-weight: 700;
-    top: 1.25rem;
-    left: 1.5rem;
-    font-family: 'FZQKBYSJW';
+    top: .3125rem;
+    left: .375rem;
+    font-family: "FZQKBYSJW";
 }
 
 /* 按钮动画效果 */
