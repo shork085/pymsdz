@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'FZQKBYSJW';
+    src: url('../CSS/fonts/FZQKBYSJW.TTF');
+}
+#main {
+    position: relative;
+    width: 640px;
+    height: 1030px;
+    margin: 0px auto;
+    /* background-color: aqua; */
+    /* background: url("/CSS/img/bg.jpg") no-repeat; */
+    background: url("../CSS/img/bg.png") no-repeat;
+    background-position: 0px -48px;
+    background-size: 108%;
+    overflow: hidden;
+}
+img {
+    position: absolute;
+    width: 2%;
+    bottom: 250px;
+    left: 20px;
+}
+#wool {
+    position: absolute;
+    width: 60%;
+    height: 28%;
+    /* background-color: aquamarine; */
+    background: url("../CSS/img/wool.png") no-repeat;
+    background-size: 100%;
+    top: 3%;
+    left: 0%;
+    animation: wool 1s  linear infinite;
+}
+#light {
+    position: absolute;
+    width: 25%;
+    height: 13%;
+    /* background-color: aquamarine; */
+    background: url("../CSS/img/light.png") no-repeat;
+    background-size: 100%;
+    right: 2%;
+    animation: blink 1s linear infinite;
+}
+
+/* 背景羊毛和玻璃光动画 */
+@keyframes wool {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-2deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(2deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes blink {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-2deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(2deg);}
+    100%{transform: rotate(0deg);}
+}
+#second{
+    position:absolute;
+    width:70%;
+    height:77%;
+    background-color:#FCFAE1;
+    top:60px;
+    left:75px;
+    /* margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    border:20px solid black;
+}
+#card{
+    width:90%;
+    height:94%;
+    position: absolute;
+    /* margin:16px 20px; */
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border:3px solid black;
+    background-image: url(../CSS/img/finalcard.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+body p {
+    color:black;
+    font-family:"FZQKBYSJW";
+}
+
+a {
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    font-family: "FZQKBYSJW";
+    /* text-decoration: none; */
+    left: 12%;
+}
+a:nth-of-type(1) {
+    bottom: 8%;
+}
+a:nth-of-type(2) {
+    bottom: 5%;
+}
+#name {
+    position: absolute;
+    line-height: 25px;;
+    font-size: 25px;
+    font-weight: 300;
+    top: 7%;
+    left: 8%;
+}
+p:nth-of-type(2){
+    position: absolute;
+    line-height:15px;
+    font-size:15px;
+    font-weight: 500;
+    top: 13%;
+    left: 8%;
+}
+p:nth-of-type(3){
+    position: absolute;
+    line-height: 17px;
+    font-size:17px;
+    font-weight: 500;
+    bottom: 10%;
+    right: 8%;
+}
+#cloth {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#main button {
+    position: absolute;
+    /* cursor: pointer; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid black;
+    bottom: 5%;
+    background-color: #DAC79A;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+}
+#main button:hover {
+    transform: scale(1.1);
+}
+#b1 {
+    background-image: url("../CSS/img/download.png");
+    background-size: 40%;
+    right: 40%;
+}
+#b2 {
+    background-image: url("../CSS/img/wechat.png");
+    background-size: 103%;
+    right: 26%;
+    /* margin-left: -40px; */
+}
+#b3 {
+    background-image: url("../CSS/img/relay.png");
+    background-size: 65%;
+    right: 12%;
+}
+#star{
+	position: absolute;
+	top: 22%;
+    left: 20%;
+    width: 60%;
+    height: 50%;
+}
+@keyframes st{
+	0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}

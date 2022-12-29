@@ -1,0 +1,220 @@
+html,body{
+    width:640px;
+    height: 1030px;
+    margin:0px auto;
+    
+}
+@font-face {
+    font-family: '华康海报体';
+    src: url('../CSS/fonts/华康海报体简.ttf');
+}
+#bg{
+    background-image: url('../CSS/img/bg3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:100%;
+    height: 100%;
+    margin:0px auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+#cur{
+    background-image: url('../CSS/img/curtain.png');
+    background-repeat: no-repeat;
+    top:0%;
+    width:100%;
+    height: 10%;
+    background-size: 100%;
+    position: absolute;
+}
+#ganzi{
+    width:100%;
+    height:10%;
+    background-image: url('../CSS/img/ganzi.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top:16%;
+    position: absolute;
+}
+#cloth{
+    width: 70%;
+    height: 60%;
+    background-image:url('../CSS/img/cloth/s2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top:16%;
+    left: 15%;
+    position: absolute;
+}
+#select{
+    width:54%;
+    height:24%;
+    background-image: url('../CSS/img/select.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0%;
+    left:10%;
+    position: absolute;
+}
+
+#select button {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 47%;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    border: 3px solid black;
+}
+/* #btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top:47%;
+    position: absolute;
+} */
+
+#select button:nth-of-type(1):hover {
+    border: 0;
+    transform: scale(0.9);
+}
+
+#select button:hover {
+    -webkit-tap-highlight-color: transparent;
+    border: 5px solid black;
+}
+
+#select #btn{
+    width: 55px;
+    height: 55px;
+    border: 0px;
+    background-image: url(../CSS/img/clear.png);
+    background-size: 100%;
+    top: 48%;
+    left: 7%;
+
+}
+#select #btn1{
+    background-image: url(../CSS/img/c1bp1.png);
+    left:29%;
+    /* top:0%; */
+}
+#select #btn2{
+    background-image: url(/CSS/img/c1bp2.png);
+    
+    left:51%;    
+}
+#select #btn3{
+
+    background-image: url(../CSS/img/c1bp3.png);
+    
+    left:74%;			
+}
+
+#back{
+    -webkit-tap-highlight-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../CSS/img/back.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    left: 9%;
+    top: 2%;
+    position:absolute;
+}
+#sheep{
+    width: 32%;
+    height:22%;
+    background-image: url(../CSS/img/sheep.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    overflow: hidden;
+    right:-7%;
+    bottom:0%;
+    position: absolute;
+}
+#card{
+    width:46%;
+    height: 22%;
+    background-color: #F5DEAA;
+    border:5px solid black;
+    top:59%;
+    left:9%;
+    position: absolute;
+}
+#card a{
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+    top: 24%;
+    left: 9%;
+    font-size: 26px;
+    text-decoration: none;
+    position:absolute;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: "华康海报体";
+}
+
+#brand {
+    position: absolute;
+    background: url(../CSS/img/brand.png) no-repeat;
+    background-size: 100%;
+    top: -20%;
+    right: 13%;
+    width: 10%;
+    height: 21%;
+    z-index: 1;
+    /* 动画 */
+    animation-name: fall,up;
+    animation-duration: 2s,2s;
+    animation-timing-function: ease,ease;
+    animation-delay: 0s,6s;
+    animation-iteration-count: 1,1;
+    animation-fill-mode: forwards,forwards;
+}
+#brand p {
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    font-size: 32px;
+    /* font-weight: bold; */
+    font-family: "华康海报体";
+}
+
+@keyframes fall {
+    100%{top: 0%;}
+}
+@keyframes up {
+    0%{top: 0%;}
+    100%{top: -20%;}
+}
+
+#star{
+	position: absolute;
+	top:13%;
+	left:10%;
+	width:70%;
+	height: 57%;
+}
+@keyframes st{
+	0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}

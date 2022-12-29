@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    position: relative;
+    width: 640px;
+    height: 1030px;
+    margin: 0 auto;
+    background-color: #FCFAE1;
+}
+
+p {
+    position: absolute;
+    /* text-decoration: none; */
+    /* cursor: default; */
+    color: black;
+    font-size: 20px;
+    left: 12%;
+    top: 54%;
+}
+
+#bar {
+    position: absolute;
+    display: flex;
+    width: 77%;
+    height: 3%;
+    /* background-color: darkgray; */
+    border-radius: 30px;
+    border: 5px solid black;
+    background: url("../CSS/img/progressbar.png") no-repeat;
+    background-size: 110%;
+    background-position: -25px -20px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#bar2 {
+    position: absolute;
+    /* width: 78%; */
+    width: 14%;
+    height: 4%;
+    /* border-radius: 30px; */
+    /* background-color: aquamarine; */
+    background: url("../CSS/img/blackbar.png") no-repeat;
+    /* background-size: 104%;
+    background-position: -6px -16px; */
+    background-size: 495%;
+    background-position: 2px -7px;
+    /* left: 11%;
+    top: 48.2%; */
+    left: 10%;
+    top: 48%;
+
+    animation: load 5s steps(5);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes load {
+
+    20% {
+        width: 26%;
+        background-size: 300%;
+        background-position: -6px -13px;
+        border-radius: 0px;
+    }
+
+    40% {
+        width: 39%;
+        background-size: 200%;
+        background-position: -4px -13px;
+        border-radius: 0px;
+    }
+
+    60% {
+        width: 52%;
+        background-size: 155%;
+        background-position: -4px -15px;
+        border-radius: 0px;
+    }
+
+    80% {
+        width: 65%;
+        background-size: 125%;
+        border-radius: 0px;
+    }
+
+    100% {
+        width: 78%;
+        border-radius: 30px;
+        background-size: 104%;
+        background-position: -6px -16px;
+        left: 11%;
+        top: 48.2%;
+    }
+}
+
+#bar li {
+    list-style: none;
+    justify-content: space-between;
+    width: 30%;
+    border-right: 5px solid;
+}
+
+#bar li:nth-last-of-type(1) {
+    border-right: 0px;
+}
+
+
+#wool {
+    position: absolute;
+    width: 12%;
+    height: 9%;
+    /* background-color: aquamarine; */
+    background: url("../CSS/img/jump.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 39%;
+    left: 12%;
+    animation: jump .5s ease infinite,move 5s steps(5);
+    animation-delay: 0s,1s;
+    animation-direction: alternate,normal;
+    animation-fill-mode: none,forwards;
+}
+
+@keyframes jump {
+    0% {top: 39%;}
+
+    100% {top: 37%;}
+}
+@keyframes move {
+    20%{transform: rotateZ(360deg);left: 25%;}
+    40%{transform: rotateZ(0deg); left: 38%;}
+    60%{transform: rotateZ(360deg);left: 50%;}
+    80%{transform: rotateZ(0deg);left: 64%;}
+    100%{transform: rotateZ(360deg);left: 76%;}
+}
+
+#right {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* background-color: aqua; */
+    background: url("../CSS/img/topright.png") no-repeat;
+    background-size: 100%;
+    background-position: 10px -10px;
+    top: 0;
+    right: 0;
+}
+
+#left {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* background-color: aqua; */
+    background: url("../CSS/img/bottomleft.png") no-repeat;
+    background-size: 100%;
+    background-position: -10px 20px;
+    bottom: 0;
+    left: 0;
+}

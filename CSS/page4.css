@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: '华康海报体';
+    src: url('../CSS/fonts/华康海报体简.ttf');
+}
+
+#main {
+    position: relative;
+    width: 640px;
+    height: 1030px;
+    /* background-color: aqua; */
+    background: url("../CSS/img/bg4.png") no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    margin: 0 auto;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    overflow: hidden;
+}
+
+#curtain {
+
+    height: 10%;
+    /* background-color: bisque; */
+    background: url("../CSS/img/curtain.png") no-repeat;
+
+    background-size: 100%;
+}
+
+#ganzi {
+    /* position: relative */
+    height: 5%;
+    /* background-color: blue; */
+    background: url("../CSS/img/ganzi.png") no-repeat;
+    background-size: 100%;
+    margin-top: 8%;
+}
+
+#cloth {
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    width: 67%;
+    height: 60%;
+    /* top: 0px; */
+    left: 16%;
+    /* background: url("/CSS/img/cloth/c2.png") no-repeat; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#select {
+    position: absolute;
+    width: 63%;
+    height: 26.5%;
+    /* background-color: teal; */
+    background: url("../CSS/img/select3.png") no-repeat;
+    background-size: 100%;
+    bottom: 0%;
+    left: 9%;
+}
+
+#select button {
+    position: absolute;
+    cursor: pointer;
+    width: 16%;
+    height: 24%;
+    border-radius: 50%;
+    top: 39%;
+    background-color: transparent;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    border: 3px solid black;
+}
+
+#select button:nth-of-type(1) {
+    width: 14%;
+    height: 21%;
+    top: 41%;
+    border: 0px;
+    background-size: cover;
+}
+
+#select button:nth-of-type(1):hover {
+    border: 0;
+    transform: scale(0.9);
+}
+
+#select button:hover {
+    -webkit-tap-highlight-color: transparent;
+    border: 5px solid black;
+}
+
+#none {
+    left: 5%;
+    background-image: url("../CSS/img/clear.png");
+}
+
+#decorate1 {
+    left: 22%;
+    background-image: url("../CSS/img/c2d1.png");
+    /* background-color: #E9EAF6; */
+    background-size: 65%;
+    background-position: center;
+}
+
+#decorate2 {
+    left: 41%;
+    background-image: url("../CSS/img/c2d2.png");
+    background-size: 65%;
+    background-position: center;
+}
+
+#decorate3 {
+    right: 24%;
+    background-image: url("../CSS/img/c2d3.png");
+    background-size: cover;
+    background-position: 0 10px;
+}
+
+#decorate4 {
+    right: 5%;
+    background-image: url("../CSS/img/c2d4.png");
+    background-size: 90%;
+    background-position: center;
+}
+
+#sheep {
+    position: absolute;
+    width: 31%;
+    height: 23%;
+    /* background-color: chocolate; */
+    background: url("../CSS/img/sheep.png") no-repeat;
+    background-size: cover;
+    background-position: 35px 1px;
+    bottom: 0%;
+    right: 0%;
+}
+
+#sheep a {
+    position: absolute;
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+    width: 43%;
+    height: 21%;
+    background-color: #E1CB9B;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border: 6px solid black;
+    bottom: 17%;
+    left: 27%;
+    font-size: 27px;
+    color: black;
+    font-weight: bold;
+    font-family: "华康海报体";
+}
+
+#back {
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    width: 8%;
+    height: 5%;
+    border-radius: 50%;
+    left: 9%;
+    top: 2%;
+    background-image: url("../CSS/img/back.png");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#brand {
+    position: absolute;
+    background: url(../CSS/img/brand.png) no-repeat;
+    background-size: 100%;
+    top: -20%;
+    right: 13%;
+    width: 10%;
+    height: 21%;
+    z-index: 1;
+    /* 动画 */
+    animation-name: fall,up;
+    animation-duration: 2s,2s;
+    animation-timing-function: ease,ease;
+    animation-delay: 0s,6s;
+    animation-iteration-count: 1,1;
+    animation-fill-mode: forwards,forwards;
+}
+#brand p {
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    font-size: 32px;
+    /* font-weight: bold; */
+    font-family: "华康海报体";
+}
+
+@keyframes fall {
+    100%{top: 0%;}
+}
+@keyframes up {
+    0%{top: 0%;}
+    100%{top: -20%;}
+}
+
+#star{
+	position: absolute;
+	top:13%;
+	left:10%;
+	width:70%;
+	height: 57%;
+}
+@keyframes st{
+	0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@keyframes fall {
+    100%{top: 0%;}
+}
+@keyframes up {
+    0%{top: 0%;}
+    100%{top: -20%;}
+}
