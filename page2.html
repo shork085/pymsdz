@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>款式和颜色</title>
+    <link rel="stylesheet" href="./CSS/page2.css">
+</head>
+
+<body>
+    <!-- 版心 -->
+    <div id="main">
+        <!-- 帘子 -->
+        <div id="curtain"></div>
+
+        <!-- 牌子 -->
+        <div id="brand"><p>款式</p></div>
+
+        <!-- 挂衣杆 -->
+        <ul id="ganzi">
+            <!-- 衣服 -->
+            <li id="c1" onclick="cloth(1)" onmouseup="createStar()"></li>
+            <li id="c3" onclick="cloth(3)" onmouseup="createStar()"></li>
+            <li id="c5" onclick="cloth(5)" onmouseup="createStar()"></li>
+        </ul>
+        <!-- 刻度条 -->
+        <ul id="bar" on>
+            <li></li>
+            <li></li>
+            <li></li>
+            <!-- <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+        </ul>
+        <!-- 选择按钮 -->
+        <div id="select">
+            <!-- 颜色 -->
+            <button id="none" onclick="none()"></button>
+            <button id="color1" onclick="color(1)"></button>
+            <button id="color2" onclick="color(2)"></button>
+            <button id="color3" onclick="color(3)"></button>
+        </div>
+        <!-- 下一步 -->
+        <div id="sheep">
+            <a href="page3.html" onclick="get()">下一步</a>
+        </div>
+
+    </div>
+</body>
+<script src="./JavaScript/page2.js"></script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title>装饰</title>
+    <link rel="stylesheet" href="./CSS/page4.css">
+</head>
+<body onload="show()">
+        <!-- 版心 -->
+        <div id="main">
+            <!-- 帘子 -->
+            <div id="curtain"></div>
+
+            <div id="brand"><p>装饰</p></div>
+
+            <!-- 挂衣杆 -->
+            <div id="ganzi">
+                <!-- 衣服 -->
+                <div id="cloth"></div>
+            </div>
+            <!-- 选择按钮 -->
+            <div id="select">
+                <button id="none" onclick="none()"></button>
+                <button id="decorate1" onclick="turn(1)" onmouseup="createStar()"></button>
+                <button id="decorate2" onclick="turn(2)" onmouseup="createStar()"></button>
+                <button id="decorate3" onclick="turn(3)" onmouseup="createStar()"></button>
+                <button id="decorate4" onclick="turn(4)" onmouseup="createStar()"></button>
+            </div>
+            <div id="star"></div>
+            <!-- 下一步 -->
+            <div id="sheep">
+                <a href="wait2.html" onclick="get()">完成</a>
+            </div>
+            <a id="back" href="page3.html"></a>
+        </div>
+</body>
+<script src="./JavaScript/page4.js"></script>
+</html>
