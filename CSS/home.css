@@ -8,7 +8,7 @@ html,body {
 }
 @font-face {
     font-family: 'FZQKBYSJW';
-    src: url('/CSS/fonts/FZQKBYSJW.TTF');
+    src: url('../CSS/fonts/FZQKBYSJW.TTF');
 }
 #main {
     position: relative;
@@ -17,7 +17,7 @@ html,body {
     margin: 0px auto;
     /* background-color: aqua; */
     /* background: url("/CSS/img/bg.jpg") no-repeat; */
-    background: url("/CSS/img/bg.png") no-repeat;
+    background: url("../CSS/img/bg.png") no-repeat;
     background-position: 0px -3rem;
     background-size: 108%;
     overflow: hidden;
@@ -34,7 +34,7 @@ img {
     width: 24rem;
     height: 18.025rem;
     /* background-color: aquamarine; */
-    background: url("/CSS/img/wool.png") no-repeat;
+    background: url("../CSS/img/wool.png") no-repeat;
     background-size: 100%;
     top: 3.125rem;
     left: 0;
@@ -45,7 +45,7 @@ img {
     width: 10rem;
     height: 8.3688rem;
     /* background-color: aquamarine; */
-    background: url("/CSS/img/light.png") no-repeat;
+    background: url("../CSS/img/light.png") no-repeat;
     background-size: 100%;
     right: .3125rem;
     animation: blink 1s linear infinite;
@@ -73,7 +73,7 @@ img {
     width: 24rem;
     height: 7.0806rem;
     /* background-color: cadetblue; */
-    background: url("/CSS/img/head.png") no-repeat;
+    background: url("../CSS/img/head.png") no-repeat;
     background-size: 100%;
     top: 8.25rem;
     right: 3.4375rem;
@@ -91,7 +91,7 @@ img {
     width: 11.5994rem;
     height: 7.0806rem;
     /* background-color: burlywood; */
-    background: url("/CSS/img/subtitle.png") no-repeat;
+    background: url("../CSS/img/subtitle.png") no-repeat;
     background-size: 100%;
     top: 15.9375rem;
     left: 4.375rem;
@@ -102,7 +102,7 @@ img {
     width: 38rem;
     height: 52.1431rem;
     /* background-color: bisque; */
-    background: url("/CSS/img/yg.png") no-repeat;
+    background: url("../CSS/img/yg.png") no-repeat;
     background-size: 100%;
     background-position: 0px -11.5625rem;
     bottom: 0;
@@ -125,7 +125,7 @@ img {
     width: 21.28rem;
     height: 35.9787rem;
     /* background-color: brown; */
-    background: url("/CSS/img/1.png");
+    background: url("../CSS/img/1.png");
     top: 7.75rem;
     right: -20.125rem;
     /* left: 10%; */
@@ -136,7 +136,7 @@ img {
     width: 17.8594rem;
     height: 31.8075rem;
     /* background-color: blueviolet; */
-    background: url("/CSS/img/2.png");
+    background: url("../CSS/img/2.png");
     top: 10.25rem;
     right: -17.1875rem;
     animation: c2 1s ease;
@@ -147,7 +147,7 @@ img {
     width: 19.3794rem;
     height: 31.2856rem;
     /* background-color: blue; */
-    background: url("/CSS/img/3.png");
+    background: url("../CSS/img/3.png");
     background-position-x: -9.25rem;
     top: 7.625rem;
     right: -19.625rem;
@@ -175,7 +175,7 @@ img {
     width: 12.4rem;
     height: 9.6563rem;
     /* background-color: bisque; */
-    background: url("/CSS/img/click.png") no-repeat;
+    background: url("../CSS/img/click.png") no-repeat;
     background-size: 100%;
     bottom: 0px;
     left: 1.25rem;
@@ -188,7 +188,7 @@ img {
     border-radius: 50%;
     /* border: 5px solid black; */
     /* background-color: #CCBB94; */
-    background: url("/CSS/img/start.png") no-repeat;
+    background: url("../CSS/img/start.png") no-repeat;
     background-size: 100%;
     bottom: 1.9375rem;
     right: 3.125rem;
@@ -203,7 +203,7 @@ img {
     height: 5.7938rem;
     border-radius: 50%;
     /* background-color: aquamarine; */
-    background: url("/CSS/img/begin.png") no-repeat;
+    background: url("../CSS/img/begin.png") no-repeat;
     background-size: 91%;
     background-position: center;
     bottom: 3.75rem;
