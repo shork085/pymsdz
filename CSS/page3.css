@@ -6,8 +6,31 @@ html,body{
 }
 @font-face {
     font-family: '华康海报体';
-    src: url('../CSS/fonts/华康海报体简.ttf');
+    src: url('../CSS/font/华康海报体简.ttf');
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?av57mr');
+    src:  url('../fonts/icomoon.eot?av57mr#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?av57mr') format('truetype'),
+      url('../fonts/icomoon.woff?av57mr') format('woff'),
+      url('../fonts/icomoon.svg?av57mr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+#horn {
+    position: absolute;
+    font-family: 'icomoon';
+    font-size: 40px;
+    background: transparent;
+    border: 0;
+    top: 2%;
+    right: 2%;
+}
+
 #bg{
     background-image: url('../CSS/img/bg3.png');
     background-repeat: no-repeat;

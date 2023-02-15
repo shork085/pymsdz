@@ -5,8 +5,31 @@ html,body{
 }
 @font-face {
     font-family: 'FZQKBYSJW';
-    src: url('../CSS/fonts/FZQKBYSJW.TTF');
+    src: url('../CSS/font/FZQKBYSJW.TTF');
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?av57mr');
+    src:  url('../fonts/icomoon.eot?av57mr#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?av57mr') format('truetype'),
+      url('../fonts/icomoon.woff?av57mr') format('woff'),
+      url('../fonts/icomoon.svg?av57mr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+#horn {
+    position: absolute;
+    font-family: 'icomoon';
+    font-size: 40px;
+    background: transparent;
+    border: 0;
+    top: 2%;
+    right: 1%;
+}
+
 body p {
     font-family: 'FZQKBYSJW';
 }
