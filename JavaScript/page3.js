@@ -27,6 +27,9 @@ function pattern(id){
         document.getElementById("cloth").style.backgroundImage="url(./CSS/img/cloth/s"+cloth+"c"+color+"p"+id+".png)";
     }
     // localStorage.setItem('pattern',id);
+
+    var click1 = document.getElementById("click1");
+    click1.play();
 }
 
 function none(){
@@ -37,13 +40,25 @@ function none(){
         document.getElementById("cloth").style.backgroundImage="url(./CSS/img/cloth/s"+cloth+"c"+color+".png)";
     }
     // localStorage.setItem('pattern',"");
+
+    var click1 = document.getElementById("click1");
+    click1.play();
 }
 
 function get(){
     url=document.getElementById("cloth").style.backgroundImage;
     localStorage.setItem('pattern',figure);
     localStorage.setItem('url',url);
+
+    cTime = backm.currentTime;
+    speaker = horn.innerHTML;
+    ispaused = backm.paused;
+    localStorage.setItem('ispaused', ispaused);
+    localStorage.setItem('speaker', speaker);
+    localStorage.setItem('currentTime', backm.currentTime);
+
 }
+
 
 
 function createStar(){
@@ -72,4 +87,40 @@ function createStar(){
     }
     
     
+}
+
+var horn = document.getElementById("horn");
+var backm = document.getElementById("bgm");
+
+
+window.onload = function () {
+
+    show();
+
+    var cTime = localStorage.getItem('currentTime');
+    var speaker = localStorage.getItem('speaker');
+    var ispaused = localStorage.getItem('ispaused');
+
+    horn.innerHTML = speaker;
+    backm.currentTime = cTime;
+    backm.paused = ispaused;
+
+    document.addEventListener('mouseup', function() {
+        backm.play();
+    });
+}
+
+
+function ismute() {
+    //阻止事件冒泡
+    event.stopPropagation();
+    //若为暂停状态
+    if (backm.paused) {
+        horn.innerHTML = "";
+        backm.play();
+    } else {
+        horn.innerHTML = "";
+        backm.pause();
+    }
+
 }

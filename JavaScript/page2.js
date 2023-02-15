@@ -8,6 +8,9 @@ function cloth(cloth1){
     for(var i=1;i<=3;i++){
         document.getElementById("color"+i).style.backgroundImage="url(./CSS/img/c"+style+i+".png)";
     }
+
+    var click2 = document.getElementById("click2");
+    click2.play();
 }
 
 //选中一个颜色衣服切换对应颜色
@@ -15,6 +18,9 @@ function color(id){
     let c=style;
     clothcolor=id;
     document.getElementById("c"+c).style.backgroundImage="url(./CSS/img/cloth/s"+c+"c"+id+".png)";
+
+    var click1 = document.getElementById("click1");
+    click1.play();
 }
 
 //保持初始样式
@@ -22,13 +28,25 @@ function none(){
     let c=style;
     clothcolor="";
     document.getElementById("c"+c).style.backgroundImage="url(./CSS/img/cloth/s"+c+".png)";
+
+    var click1 = document.getElementById("click1");
+    click1.play();
 }
 
 //存取变量
 function get(){
     localStorage.setItem('style',style);
     localStorage.setItem('clothcolor',clothcolor);
+
+    cTime = backm.currentTime;
+    speaker = horn.innerHTML;
+    ispaused = backm.paused;
+    localStorage.setItem('ispaused', ispaused);
+    localStorage.setItem('speaker', speaker);
+    localStorage.setItem('currentTime', backm.currentTime);
+
 }
+
 
 function createStar(){
     var offsetWidth = document.getElementById("ganzi").offsetWidth;
@@ -56,3 +74,36 @@ function createStar(){
     }
 }
 
+var horn = document.getElementById("horn");
+var backm = document.getElementById("bgm");
+
+
+window.onload = function () {
+
+    var cTime = localStorage.getItem('currentTime');
+    var speaker = localStorage.getItem('speaker');
+    var ispaused = localStorage.getItem('ispaused');
+
+    horn.innerHTML = speaker;
+    backm.currentTime = cTime;
+    backm.paused = ispaused;
+
+    document.addEventListener('mouseup', function() {
+        document.getElementById('bgm').play();
+    });
+}
+
+
+function ismute() {
+    //阻止事件冒泡
+    event.stopPropagation();
+    //若为暂停状态
+    if (backm.paused) {
+        horn.innerHTML = "";
+        backm.play();
+    } else {
+        horn.innerHTML = "";
+        backm.pause();
+    }
+
+}
