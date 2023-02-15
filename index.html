@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.3" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
     <title>首页</title>
     <link rel="stylesheet" href="./CSS/home.css">
 </head>
@@ -23,13 +23,24 @@
             <li id="c3"></li>
         </ul>
         <div id="sheep"></div>
-
         <div id="btn"></div>
         <div id="begin">
-            <a href="start.html">开始定制</a>
+            <!-- <a href="start.html">开始定制</a> -->
+            <button id="go" onclick="music()">开始定制</button>
         </div>
+
+        <audio id="click1">
+            <source src="./CSS/click1.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="bgm">
+            <source src="./CSS/BGM.mp3" type="audio/mp3">
+        </audio>
+
         <img src="./CSS/img/watermark.png" alt="">
+        <button id="horn" onclick="ismute()"></button>
     </div>
 </body>
+<script src="./JavaScript/home.js"></script>
 
 </html>

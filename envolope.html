@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-		<title>信封</title>
-		<link rel="stylesheet" href="./CSS/envolope.css">
-	</head>
-	<body>
-		<div id="bg">
-			<div id="title">
-				<p style="top:10%;font-size:30px;color:saddlebrown;">叮叮叮！</p>
-				<p style="top:10%;font-size:30px;color:saddlebrown;">您有一封来自濮院的信件</p>
-			</div>
-			<p id="btt">濮院小tips：</p>
-			<p id="btt1">濮院位于浙江省嘉兴桐乡市，全国10件毛衫，有7件出自濮院。</p>
-			<p id="btt2">濮院毛衫不仅畅销全国，还出口海外</p>
-			<p id="btt3">这里的毛衫款式多到你想要的样子在这里都能找到！</p>
-			<!--[endif]-->
-			<div id="evolope" onclick="change()">
-				<div id="letter">
-					<p id="lettertext">您的专属毛衫卡片已送达</p>
-				</div>
-			</div>
-			
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>信封</title>
+	<link rel="stylesheet" href="./CSS/envolope.css">
+</head>
+
+<body>
+	<div id="bg">
+		<div id="title">
+			<p style="top:10%;font-size:30px;color:saddlebrown;">叮叮叮！</p>
+			<p style="top:10%;font-size:30px;color:saddlebrown;">您有一封来自濮院的信件</p>
 		</div>
+		<p id="btt">濮院小tips：</p>
+		<p id="btt1">濮院位于浙江省嘉兴桐乡市，全国10件毛衫，有7件出自濮院。</p>
+		<p id="btt2">濮院毛衫不仅畅销全国，还出口海外</p>
+		<p id="btt3">这里的毛衫款式多到你想要的样子在这里都能找到！</p>
+		<!--[endif]-->
+		<div id="evolope" onclick="change()">
+			<div id="letter">
+				<p id="lettertext">您的专属毛衫卡片已送达</p>
+			</div>
 		</div>
-		
-	</body>
-	<script src="./JavaScript/envolpoe.js"></script>
+
+	</div>
+
+	<button id="horn" onclick="ismute()"></button>
+	<audio id="bgm">
+		<source src="./CSS/BGM.mp3" type="audio/mp3">
+	</audio>
+	<audio id="click">
+		<source src="./CSS/preview.mp3" type="audio/mp3">
+	</audio>
+
+</body>
+<script src="./JavaScript/envolpoe.js"></script>
+
 </html>

@@ -7,7 +7,7 @@
 		<title>纹样</title>
 		<link rel="stylesheet" href="./CSS/page3.css">
 	</head>
-	<body onload="show()">
+	<body >
 		<div id="bg">
 			<div id="cur"></div>
 			<a id="back" href="page2.html"></a>
@@ -26,6 +26,17 @@
             	<button id="btn3" onclick="pattern(3)" onmouseup="createStar()"></button>
 			</div>
 			<div id="star"></div>
+
+			<button id="horn" onclick="ismute()"></button>
+
+			<audio id="bgm">
+				<source src="./CSS/BGM.mp3" type="audio/mp3">
+			</audio>
+
+			<audio id="click1">
+				<source src="./CSS/click1.mp3" type="audio/mp3">
+			</audio>
+
 		</div>
 	</body>
 	<script src="./JavaScript/page3.js"></script>
