@@ -76,7 +76,7 @@ function none(){
 	document.getElementById("cloth").style.backgroundImage=url.substring(0,index)+decoration+url.substring(index);
 
 	var click1 = document.getElementById("click1");
-    	click1.play();
+    click1.play();
 }
 
 function get(){
@@ -139,12 +139,7 @@ window.onload = function () {
     backm.paused = ispaused;
 
     document.addEventListener('mouseup', function() {
-        if(backm.paused){
-            horn.innerHTML = "";
-        }else{
-            horn.innerHTML = "";
-            backm.play();
-        }
+        backm.play();
     });
 }
 

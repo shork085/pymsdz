@@ -106,12 +106,7 @@ window.onload = function () {
     backm.paused = ispaused;
 
     document.addEventListener('mouseup', function() {
-        if(backm.paused){
-            horn.innerHTML = "";
-        }else{
-            horn.innerHTML = "";
-            backm.play();
-        }
+        backm.play();
     });
 }
 

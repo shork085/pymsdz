@@ -14,13 +14,8 @@ window.onload = function () {
     backm.currentTime = cTime;
     backm.paused = ispaused;
 
-    document.addEventListener('click', function() {
-        if(backm.paused){
-            horn.innerHTML = "";
-        }else{
-            horn.innerHTML = "";
-            backm.play();
-        }
+    document.addEventListener('mouseup', function() {
+        document.getElementById('bgm').play();
     });
 }
 

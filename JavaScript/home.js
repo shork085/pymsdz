@@ -1,7 +1,7 @@
 var backm = document.getElementById("bgm");
 var horn = document.getElementById("horn");
 
-document.addEventListener('click', function() {
+document.addEventListener('mouseup', function() {
     document.getElementById('bgm').play();
 });
 
