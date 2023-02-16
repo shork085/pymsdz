@@ -13,7 +13,10 @@ window.onload = function () {
     backm.paused = ispaused;
 
     document.addEventListener('click', function() {
-        document.getElementById('bgm').play();
+        if(backm.paused){
+        }else{
+            backm.play();
+        }
     });
 }
 
