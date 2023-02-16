@@ -45,7 +45,9 @@ window.onload = function () {
 
 	document.addEventListener('mouseup', function () {
 		if(backm.paused){
+           		horn.innerHTML = "";
         	}else{
+            		horn.innerHTML = "";
             		backm.play();
         	}
 	});
