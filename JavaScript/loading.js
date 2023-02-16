@@ -16,7 +16,9 @@ window.onload = function () {
 
     document.addEventListener('click', function() {
         if(backm.paused){
+            horn.innerHTML = "";
         }else{
+            horn.innerHTML = "";
             backm.play();
         }
     });
