@@ -44,7 +44,10 @@ window.onload = function () {
 	backm.paused = ispaused;
 
 	document.addEventListener('mouseup', function () {
-		document.getElementById('bgm').play();
+		if(backm.paused){
+        	}else{
+            		backm.play();
+        	}
 	});
 }
 
